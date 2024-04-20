@@ -38,7 +38,7 @@ int main() {
     So, at the end, variable a would contain the value 5 while variable b
     would contain value 3.
     */
-    i = (j = 3, j + 2);                         // "," separates expressions.
+    i = (j = 3, j + 0, j + 2);                         // "," separates expressions. The most right expression is used to pass "i" a value.
 
     cout << "Value of \"i\": " << i << endl;    // Value of "i": 5
     cout << "Value of \"j\": " << j << endl;    // Value of "j": 3
